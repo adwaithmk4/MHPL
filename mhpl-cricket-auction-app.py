@@ -1859,12 +1859,12 @@ def init_state():
     if 'teams' not in st.session_state:
         # Default teams for MHPL Cricket Tournament
         st.session_state.teams = {
-            "Thunderbolts XI": {"budget": 1000, "spent": 0, "players": []},
-            "Royal Smashers": {"budget": 1000, "spent": 0, "players": []},
-            "Deccan Warriors": {"budget": 1000, "spent": 0, "players": []},
-            "Malabar Masters": {"budget": 1000, "spent": 0, "players": []},
-            "Super Kings CC": {"budget": 1000, "spent": 0, "players": []},
-            "United Gladiators": {"budget": 1000, "spent": 0, "players": []}
+            "The Bison XI": {"budget": 1000, "spent": 0, "players": []},
+            "Titans CUK": {"budget": 1000, "spent": 0, "players": []},
+            "Elite XI": {"budget": 1000, "spent": 0, "players": []},
+            "Spartans ": {"budget": 1000, "spent": 0, "players": []},
+            "CUK Akatsuki": {"budget": 1000, "spent": 0, "players": []},
+            "Falcons CUK": {"budget": 1000, "spent": 0, "players": []}
         }
         
     if 'current_player_id' not in st.session_state:
@@ -2044,7 +2044,7 @@ with tab_arena:
         st.markdown("### 🔨 Bidding Room")
     with col_b:
         # Configuration parameters
-        base_price_val = st.number_input("Base Player Price (Points)", min_value=10, max_value=100, value=20, step=5)
+        base_price_val = st.number_input("Base Player Price (Points)", min_value=10, value=10, step=5)
     with col_c:
         # Option to navigate / select player manually or random
         available_player_options = [p for p in st.session_state.players if p["status"] == "Available"]
