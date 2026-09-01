@@ -1859,12 +1859,12 @@ def init_state():
     if 'teams' not in st.session_state:
         # Default teams for MHPL Cricket Tournament
         st.session_state.teams = {
-            "Thunderbolts XI": {"budget": 1000, "spent": 0, "players": []},
-            "Royal Smashers": {"budget": 1000, "spent": 0, "players": []},
-            "Deccan Warriors": {"budget": 1000, "spent": 0, "players": []},
-            "Malabar Masters": {"budget": 1000, "spent": 0, "players": []},
-            "Super Kings CC": {"budget": 1000, "spent": 0, "players": []},
-            "United Gladiators": {"budget": 1000, "spent": 0, "players": []}
+            "The Bison XI": {"budget": 1000, "spent": 0, "players": []},
+            "Titans CUK": {"budget": 1000, "spent": 0, "players": []},
+            "Spartans": {"budget": 1000, "spent": 0, "players": []},
+            "CUK Akatsuki": {"budget": 1000, "spent": 0, "players": []},
+            "Elite XI": {"budget": 1000, "spent": 0, "players": []},
+            "Falcons CUK": {"budget": 1000, "spent": 0, "players": []}
         }
         
     if 'current_player_id' not in st.session_state:
@@ -2117,7 +2117,7 @@ with tab_arena:
             if current_p['photo_direct']:
                 try:
                     # Fallback support
-                    st.image(current_p['photo_direct'], caption=f"Profile of {current_p['name']}", width=photo_size)
+                    st.image(current_p['photo_direct'], caption=f"Profile of {current_p['name']}", width=500)
                 except Exception:
                     # If GDrive loading fails or direct link blocks, show standard text link or generic image
                     st.warning("Could not render Direct Drive Photo. View via standard URL:")
