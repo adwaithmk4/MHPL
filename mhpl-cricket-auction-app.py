@@ -2048,7 +2048,7 @@ with tab_arena:
         st.markdown("### 🔨 Bidding Room")
     with col_b:
         # Configuration parameters
-        base_price_val = st.number_input("Base Player Price (Points)", min_value=10, max_value=100, value=20, step=5)
+        base_price_val = st.number_input("Base Player Price (Points)", min_value=10, value=10, step=5)
         # Dynamic photo width controller
         photo_size = st.slider("Adjust Photo Width (px)", min_value=150, max_value=600, value=300, step=10)
     with col_c:
