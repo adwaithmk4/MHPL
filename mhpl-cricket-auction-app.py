@@ -1975,7 +1975,7 @@ with st.sidebar:
     st.markdown("---")
     
     # State Save/Restore
-    st.markdown("### 💾 Backup & Sync")
+    st.markdown("###  Backup & Sync")
     
     # Download JSON button
     full_state_json = json.dumps({
@@ -2027,11 +2027,11 @@ with st.sidebar:
 # 4. MAIN INTERFACE TABS
 # ----------------------------------------
 tab_arena, tab_rosters, tab_registry, tab_analytics, tab_logs = st.tabs([
-    "🔨 Live Auction Arena", 
-    "📋 Team Rosters & Budgets", 
-    "🔍 Player Registry & Search", 
-    "📊 Spending Analytics",
-    "📝 Transaction Log"
+    " Live Auction Arena", 
+    " Team Rosters & Budgets", 
+    " Player Registry & Search", 
+    " Spending Analytics",
+    " Transaction Log"
 ])
 
 # ----------------------------------------
@@ -2041,7 +2041,7 @@ with tab_arena:
     # Top banner or quick metrics
     col_a, col_b, col_c = st.columns(3)
     with col_a:
-        st.markdown("### 🔨 Bidding Room")
+        st.markdown("###  Bidding Room")
     with col_b:
         # Configuration parameters
         base_price_val = st.number_input("Base Player Price (Points)", min_value=10, value=10, step=5)
@@ -2082,7 +2082,7 @@ with tab_arena:
                 save_session_to_file()
                 st.rerun()
         else:
-            st.success("🎉 All players have been auctioned! Check out the Team Rosters tab for final squad details.")
+            st.success(" All players have been auctioned! Check out the Team Rosters tab for final squad details.")
     else:
         # Display the active bidding workspace
         col_profile, col_bidding = st.columns([1.2, 1])
@@ -2105,7 +2105,7 @@ with tab_arena:
             if current_p['photo_direct']:
                 try:
                     # Fallback support
-                    st.image(current_p['photo_direct'], caption=f"Profile of {current_p['name']}", use_container_width=True)
+                    st.image(current_p['photo_direct'], caption=f"Profile of {current_p['name']}", width=250)
                 except Exception:
                     # If GDrive loading fails or direct link blocks, show standard text link or generic image
                     st.warning("Could not render Direct Drive Photo. View via standard URL:")
@@ -2123,7 +2123,7 @@ with tab_arena:
                 
         # 2. Right: Bidding Control Interface
         with col_bidding:
-            st.markdown("### 🔨 Bid Desk")
+            st.markdown("###  Bid Desk")
             
             # Display active high bid
             if st.session_state.current_bidder:
