@@ -1975,7 +1975,7 @@ with st.sidebar:
     st.markdown("---")
     
     # State Save/Restore
-    st.markdown("###  Backup & Sync")
+    st.markdown("### 💾Backup & Sync")
     
     # Download JSON button
     full_state_json = json.dumps({
