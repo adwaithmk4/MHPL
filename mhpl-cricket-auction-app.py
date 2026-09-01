@@ -1815,6 +1815,36 @@ EMBEDDED_PLAYERS = [
         "photo_url": "https://drive.google.com/open?id=1i57atehTDuRHJDrP7vxMzH_NjSgdSfsK",
         "photo_direct": "https://lh3.googleusercontent.com/u/0/d/1i57atehTDuRHJDrP7vxMzH_NjSgdSfsK",
         "remarks": None
+    },
+    {
+        "id": "PL_113",
+        "name": "Chitharanjan",
+        "role": "All-rounder",
+        "department": "Education",
+        "reg_num": "2501607005",
+        "course": "ITEP",
+        "wicket_keeper": "No",
+        "batting_style": "Right",
+        "bowling_hand": "Right",
+        "bowling_style": "Medium Fast",
+        "photo_url": "https://drive.google.com/open?id=1i57atehTDuRHJDrP7vxMzH_NjSgdSfsK",
+        "photo_direct": "https://lh3.googleusercontent.com/u/0/d/1i57atehTDuRHJDrP7vxMzH_NjSgdSfsK",
+        "remarks": None
+    },
+    {
+        "id": "PL_114",
+        "name": "Dhananjay",
+        "role": "Batter",
+        "department": "ITEP",
+        "reg_num": "125454545",
+        "course": "ITEP",
+        "wicket_keeper": "Yes",
+        "batting_style": "Right",
+        "bowling_hand": None,
+        "bowling_style": None,
+        "photo_url": "https://drive.google.com/open?id=1AHYLarcP50pHxl7h2VL0EtZBumuH8DmT",
+        "photo_direct": "https://lh3.googleusercontent.com/u/0/d/1AHYLarcP50pHxl7h2VL0EtZBumuH8DmT",
+        "remarks": None
     }
 ]
 
