@@ -2105,7 +2105,7 @@ with tab_arena:
             if current_p['photo_direct']:
                 try:
                     # Fallback support
-                    st.image(current_p['photo_direct'], caption=f"Profile of {current_p['name']}", width=250)
+                    st.image(current_p['photo_direct'], caption=f"Profile of {current_p['name']}", width=500)
                 except Exception:
                     # If GDrive loading fails or direct link blocks, show standard text link or generic image
                     st.warning("Could not render Direct Drive Photo. View via standard URL:")
